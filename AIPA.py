@@ -625,25 +625,284 @@ total=0
 #     print("Invalid choice. Please try again.")
 
 #Student record processor
-students = [
-    {"name": "Aman", "marks": 85},
-    {"name": "Riya", "marks": 72},
-    {"name": "Rahul", "marks": 35},
-    {"name": "Priya", "marks": 90},
-    {"name": "Neha", "marks": 45}
-]
+# students = [
+#     {"name": "Aman", "marks": 85},
+#     {"name": "Riya", "marks": 72},
+#     {"name": "Rahul", "marks": 35},
+#     {"name": "Priya", "marks": 90},
+#     {"name": "Neha", "marks": 45}
+# ]
 
-def calculate_average(students):
-    total = 0
-    for student in students:
-        total += student["marks"]
-    return total / len(students)
+# def calculate_average(students):
+#     total = 0
+#     for student in students:
+#         total += student["marks"]
+#     return total / len(students)
 
-def passing_students(students):
-    print("Passing Students:")
-    for student in students:
-        if student["marks"] >= 40:
-            print(student["name"])
+# def passing_students(students):
+#     print("Passing Students:")
+#     for student in students:
+#         if student["marks"] >= 40:
+#             print(student["name"])
 
-print("Average Marks =", calculate_average(students))
-passing_students(students)
+# print("Average Marks =", calculate_average(students))
+# passing_students(students)
+
+#Python Moduals built-in modules
+
+# import math
+
+# print("squire root:",math.sqrt(100))
+# print("sqare of :",math.pow(5,3))
+# print("Factorial:",math.factorial(5))
+
+
+# import random
+# number=random.randint(1,10)
+# print(number)
+
+# print(random.choice(["Anjali","Diya","Disha","Shikha"]))
+
+
+# import datetime
+
+# today=datetime.date.today()
+# print(today)
+
+# currenttime=datetime.datetime.now()
+# print(currenttime)
+
+# import statistics
+
+# marks=[50,55,45,56,66,66]
+# print(statistics.mean(marks))
+# print(statistics.median(marks))
+# print(statistics.mode(marks))
+
+# import os 
+# print(os.name)  #nt- windows posix-linux/mac
+# print(os.getcwd())
+
+# os.mkdir("modules1_today")
+
+# def add(a,b):
+#  return a+b
+
+# def sub(a,b):
+#   return a-b
+
+# def mul(a,b):
+#   return a*b
+
+# def div(a,b):
+#   return a/b
+
+# x=10
+# y=8
+# import modules
+
+# print(module.add(10,5))
+# print(module.sub(10,5))
+
+# print(module.mul(10,5))
+# print(module.div(10,5))
+
+# total=module.x +module .y
+# print(module)
+
+# from module import mul,xyz
+# print(xyz(10,5))
+
+#pip is an standard package installer for python
+
+# def add(a, b):
+#     return a + b
+
+# def subtract(a, b):
+#     return a - b
+
+# def multiply(a, b):
+#     return a * b
+
+# def divide(a, b):
+#  return a / b
+
+# import calculator
+
+# print(calculator.add(10, 5))
+# print(calculator.subtract(10, 5))
+# print(calculator.multiply(10, 5))
+# print(calculator.divide(10, 5))
+
+# File=open("test.txt","mode") #Syntax
+
+# r-read > read an existing File
+# w- write > create a file or overwrite  an exiting File
+# a- append > add data to the End
+
+# file=open("aipa.txt","w")
+# file.write(" Hello students of AIPA")
+# file.close()
+
+# with open ("aipa2.txt","w") as file:
+#     file.write(" hello studenets of aipa nsti alld")
+#append "a" _ add a new line to exiting file 
+
+# with open ("open with aipa.txt","a") as file:
+
+#  file.write("\n Prayagraj, Uttar Pradesh")
+#  file.write("\n India")
+
+#  # read -"r" read all the content of file
+# # with open("aipa.txt","read") as file:
+# #  x=file.read(52) 
+# #  print(x)  
+
+# #read -"r" read all the content file
+# import time
+# with open("aipa.txt","r") as file:
+#     for line in file:
+#         print(line.strip())
+#         time.sleep(1)
+
+#         x=file.read()
+#         print(x)
+
+#         x=file.read(52)
+#         print(x)
+#         print(file.readline())
+#         print(file.readline())
+#         print(file.readline())
+
+#         print(file.readline().strip())
+#         print(file.readline().strip())
+#         print(file.readline().strip())
+
+#         lines=file.readline()
+#         print(lines)
+
+        #"x"- create a new file ifthe file does not already exist
+
+# with open("aipa.txt","a") as file:
+#            file.write("x mode")
+
+#         # Except:
+
+# print("file already exists")
+
+# import csv
+
+# std=[
+#         ["Shreya",22,"AIPA"],
+#         ["Diya",22,"AIPA"],
+#         ["Siya",22,"AIPA"],
+#         ["Khushi",22,"AIPA"],
+#         ["Anu",22,"AIPA"],
+#         ["Priya",22,"AIPA"]]
+
+# with open("student.csv","w", newline="") as file:
+#         writer=csv.writer(file)
+#         writer.writerows(std)
+#         with open("student.csv","r") as file:
+#                 reader=csv.reader(file)
+#                 for row in reader:
+#                         print(row)
+
+#Handling Direction &files
+
+# import os,shutil,pathlib
+
+# print(os.getcwd()) #current working directory
+
+# os.mkdir("21 oct") #create a directory
+# os.mkdir("21 oct") #remove a directory
+# print(os.listdir(".")) #list file and Directory
+
+# shutil.rmtree("21 oct") #remove everything in a directory
+
+# os.rename("csa.txt","copa.txt")#rename a file
+# shutil.copy("aipa.txt","aipa2.txt") #copy file
+# shutil.move("a.txt","b.txt") #move a file
+
+# with open ("21Oct/22Oct/aipa/aipa.txt","w") as file: #Nested if Directory
+#     file.write("Hello")
+
+# from pathlib import Path
+# filename=input("enter the filename")
+
+# path=Path(filename)
+
+# if path.exists():
+#     print("file exists")
+# else:
+#     print("file does not exist")
+
+# import os
+
+# print("Current Working Directory:")
+# print(os.getcwd())
+
+# print("\nFiles and Folders:")
+# print(os.listdir())
+
+# from pathlib import Path
+
+# filename = input("Enter filename: ")
+
+# file = Path(filename)
+
+# if file.exists():
+#     print("File exists.")
+# else:
+#     print("File does not exist.")
+
+# from pathlib import Path
+
+# folder = Path("College/Students/AIPA")
+# folder.mkdir(parents=True, exist_ok=True)
+
+# print("Folders created successfully.")
+
+# from pathlib import Path
+
+# folder = Path(input("Enter folder path: "))
+
+# for file in folder.iterdir():
+#     if file.suffix in [".csv", ".txt"] and file.is_file():
+#         print(file.name)
+
+
+# from pathlib import Path
+
+# folder = Path(".")
+
+# for file in folder.iterdir():
+#     if file.is_file() and file.suffix in [".csv", ".txt"]:
+#         print(file.name)
+
+# import shutil
+# from pathlib import Path
+
+# file = Path("next.txt")
+# backup = Path("Backup")
+
+# if file.exists():
+#     backup.mkdir(exist_ok=True)
+#     shutil.copy2(file, backup / file.name)
+#     print("Backup successful!")
+# else:
+#     print("File not found!")
+
+
+import shutil
+from pathlib import Path
+
+file = Path("aipa2.txt")
+backup = Path("Backup")
+
+if file.exists():
+    backup.mkdir(exist_ok=True)
+    shutil.copy2(file, backup / file.name)
+    print("Backup successful!")
+else:
+    print("File not found!")
